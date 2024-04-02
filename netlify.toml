@@ -5,5 +5,5 @@
   from = "/*"  
   to = "/index.html"  
   status = 200
-[[plugins]]  
-  package = "@netlify/plugin-nextjs"
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
