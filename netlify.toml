@@ -1,5 +1,6 @@
-[build]  
-  command = "npm run build-prod"  
-  publish = ".next"
+[build]
+  publish = "out"
+  command = "npm run build-prod"
+
 [build.environment]
   NETLIFY_NEXT_PLUGIN_SKIP = "true"
