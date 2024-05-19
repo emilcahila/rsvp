@@ -1,31 +1,30 @@
 import React from 'react';
 
-import { Button } from '../button/Button';
 import { HeroOneButton } from '../hero/HeroOneButton';
-import { Section } from '../layout/Section';
 
 const Hero = () => {
   return (
-    // <Background color="bg-gray-100">
-    <Section yPadding="pt-20 pb-20">
+    <div className="flex min-h-screen items-center justify-center">
       <HeroOneButton
         title={
-          <>
-            <p className="font-VilaneExtraLight pb-5 text-2xl">
-              Together with their families
-            </p>
-            <p className="font-Precious p-1 text-primary-700">Analyn</p>
-            <p className="font-Precious pt-10 text-primary-700">& Ryan</p>
-            <p className="font-VilaneExtraLight pt-5 text-2xl">
-              Joyfully invite you to their wedding celebration
-            </p>
-          </>
+          <div className="flex w-full">
+            <div className="flex-col items-center">
+              <p className="font-Scriptina text-10xl pb-16 text-white">
+                Analyn
+              </p>
+              <div className="flex items-center">
+                <p className="font-LibreBaskervilleBold p-1 text-base text-white">
+                  AND
+                </p>
+                <p className="font-Scriptina text-10xl p-1 pt-5 text-white">
+                  Ryan
+                </p>
+              </div>
+            </div>
+          </div>
         }
-        button={<Button xl>RSVP</Button>}
-        onClick={() => null}
       />
-    </Section>
-    // </Background>
+    </div>
   );
 };
 
