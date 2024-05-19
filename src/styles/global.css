@@ -31,3 +31,41 @@
 .font-LibreBaskerville {
   font-family: 'LibreBaskerville-Regular', sans-serif;
 }
+
+.wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.figure {
+  text-align: center;
+}
+
+.figure p {
+  margin: 0;
+}
+
+.border {
+  border-left: 3px solid #FFFFFF; /* Change the border color to white */
+  position: absolute;
+}
+
+.top-border {
+  height: 5rem; /* Adjust this value if needed */
+  top: -5rem;
+}
+
+.bottom-border {
+  height: 15rem; /* Adjust this value to control the length of the line */
+  bottom: -15rem;
+  margin-top: 2rem; /* Add space between the number 56 and the border */
+}
