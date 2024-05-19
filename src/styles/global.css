@@ -55,7 +55,7 @@
 }
 
 .border {
-  border-left: 3px solid #FFFFFF; /* Change the border color to white */
+  border-left: 1px solid #FFFFFF; /* Change the border color to white */
   position: absolute;
 }
 
