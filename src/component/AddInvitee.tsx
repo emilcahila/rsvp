@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 
 import { Modal } from '@/modal/modal';
 import type { InviteeModel } from '@/types/inviteeModel';
-import { BASEURL } from '@/utils/constants';
 
 const baseForm: InviteeModel = {
   firstName: '',
@@ -16,8 +15,6 @@ function AddInviteeFormComponent() {
   const [formData, setFormData] = useState(baseForm);
   const [successMessage, setSuccessMessage] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
-  const url =
-    process.env.ENV === 'prod' ? `${BASEURL}/api/invites` : '/api/invites';
 
   const successModal = {
     title: 'Success',
@@ -49,7 +46,7 @@ function AddInviteeFormComponent() {
     event.preventDefault();
 
     try {
-      await axios.post(url, JSON.stringify(formData), {
+      await axios.post('/api/invites', JSON.stringify(formData), {
         headers: {
           'Content-Type': 'application/json',
         },
