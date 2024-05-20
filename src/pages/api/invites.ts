@@ -20,7 +20,6 @@ export default async function handler(
       const invitee = await db.collection('invitees').insertOne(bodyObject);
       res.status(201).json({
         acknowledged: invitee.acknowledged,
-        insertedId: invitee.insertedId,
       });
       break;
     }

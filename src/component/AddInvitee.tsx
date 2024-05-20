@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
 import { Modal } from '@/modal/modal';
@@ -15,6 +16,7 @@ function AddInviteeFormComponent() {
   const [formData, setFormData] = useState(baseForm);
   const [successMessage, setSuccessMessage] = useState(false);
   const [errorMessage, setErrorMessage] = useState(false);
+  const router = useRouter();
 
   const successModal = {
     title: 'Success',
@@ -22,6 +24,7 @@ function AddInviteeFormComponent() {
   };
 
   const closeSuccessModal = () => {
+    router.reload();
     setSuccessMessage(false);
   };
 
@@ -60,7 +63,10 @@ function AddInviteeFormComponent() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="flex flex-col items-center">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col items-center  dark:border-gray-700 dark:bg-gray-800"
+      >
         <div>
           <input
             name="firstName"
@@ -68,7 +74,7 @@ function AddInviteeFormComponent() {
             value={formData.firstName}
             onChange={handleChange}
             required
-            className="m-5 rounded text-left"
+            className="m-5 rounded text-left dark:border-gray-700 dark:bg-gray-800"
           />
         </div>
         <div>
@@ -78,7 +84,7 @@ function AddInviteeFormComponent() {
             value={formData.lastName}
             onChange={handleChange}
             required
-            className="m-5 rounded text-left"
+            className="m-5 rounded text-left dark:border-gray-700 dark:bg-gray-800"
           />
         </div>
         <div>
@@ -87,7 +93,7 @@ function AddInviteeFormComponent() {
             placeholder="Group"
             value={formData.group}
             onChange={handleChange}
-            className="m-5 rounded text-left"
+            className="m-5 rounded text-left dark:border-gray-700 dark:bg-gray-800"
           ></input>
         </div>
         <div>
