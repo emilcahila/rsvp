@@ -34,10 +34,10 @@ const DetailsContainer = () => (
   <div className="font-LibreBaskerville item-center mt-4 justify-center text-center text-white sm:ml-7 sm:mt-8 sm:text-center">
     <p className="text-base sm:text-lg">invite you to celebrate</p>
     <p className="text-base sm:text-lg">their love and marriage</p>
-    <p className="mt-4 text-sm sm:text-base">SATURDAY, 14TH OF DECEMBER</p>
+    <p className="mt-4 text-sm">SATURDAY, 14TH OF DECEMBER</p>
     <p className="text-sm sm:text-base">TWENTY TWENTY-FOUR</p>
-    <p className="mt-4 text-sm sm:text-base">six o&apos;clock in the evening</p>
-    <p className="text-sm sm:text-base">Lola Cafe, Pasay, Philippines</p>
+    <p className="mt-4 text-sm">six o&apos;clock in the evening</p>
+    <p className="text-sm">Lola Cafe, Pasay, Philippines</p>
   </div>
 );
 
