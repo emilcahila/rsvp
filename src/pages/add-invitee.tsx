@@ -2,7 +2,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
-import AddInviteeFormComponent from '@/component/AddInvitee';
+import AddInviteeFormComponent from '@/component/AddInviteeForm';
 import UsersTable from '@/component/InviteesTable';
 import type { InviteeModel } from '@/types/inviteeModel';
 import { BACKGROUND_COLOR } from '@/utils/constants';

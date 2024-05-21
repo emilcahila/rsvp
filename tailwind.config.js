@@ -2,7 +2,8 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
-      sans: ['Vilane Extra Light', 'sans-serif'],
+      sans: ['"Libre Baskerville - Regular"', 'sans-serif'],
+      scriptina: ['Scriptina', 'cursive'],
     },
     fontSize: {
       xs: '0.75rem',
@@ -15,6 +16,9 @@ module.exports = {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
+      '8xl': '6rem',
+      '10xl': '10rem',
+      '20xl': '20rem',
     },
     extend: {
       colors: {
@@ -43,6 +47,11 @@ module.exports = {
       },
       lineHeight: {
         hero: '4.5rem',
+      },
+      spacing: {
+        'vh-50': '50vh',
+        'vh-75': '75vh',
+        'vh-100': '100vh',
       },
     },
   },
