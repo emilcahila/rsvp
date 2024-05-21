@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Scriptina';
-  src: url('/assets/fonts/SCRIPTIN.ttf') format('truetype'); 
+  src: url('/fonts/SCRIPTIN.ttf') format('truetype'); 
 }
 
 .font-Scriptina {
@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'Libre Baskerville Bold';
-  src: url('/assets/fonts/LibreBaskerville-Bold.ttf') format('truetype');
+  src: url('/fonts/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
 .font-LibreBaskervilleBold {
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Libre Baskerville';
-  src: url('/assets/fonts/LibreBaskerville-Regular.ttf') format('truetype'); 
+  src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype'); 
 }
 
 .font-LibreBaskerville {
